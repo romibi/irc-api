@@ -64,10 +64,10 @@ public class ConnectCmdListener
 		}
 		else if (aServMsg.getNumericCode() == IRCServerNumerics.SERVER_WELCOME_MESSAGE)
 		{
-			nick = getNick(aServMsg.getText());
-			if(nick.equals("GLHF") && aServMsg.getSource().getHostname().contains("twitch")) {
+			//nick = getNick(aServMsg.getText());
+			//if(nick.equals("GLHF") && aServMsg.getSource().getHostname().contains("twitch")) {
 				nick = aServMsg.getTarget();
-			}
+			//}
 		}
 		else if (aServMsg.getNumericCode().equals(IRCServerNumerics.SERVER_OPTIONS))
 		{
